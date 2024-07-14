@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins",sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background: url('https://picsum.photos/id/92/3568/2368');
+  justify-content: center;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  background: transparent;
+  border: 2px solid rgba(222, 222, 222,.2);
+  width: 420px;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  color:white;
+  border-radius: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 9px;
 }
-
-.App-link {
-  color: #61dafb;
+.card-header .green-line{
+  width: 61px;
+  height: 6px;
+  background: greenyellow;
+  border-radius: 9px;
 }
+.card .card-title{
+  font-size: 48px;
+  text-align: center;
+}
+.input-box{
+  position: relative;
+  margin: 30px  0px;
+  width: 100%;
+  height: 50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.input-box input{
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  color:#fff;
+  outline:none;
+  font-size: 1rem;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  padding:20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color:white;
+
+  
+}
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+.btn{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:#fff;
+  background-color: rgb(166, 226, 76) ;
+  border: none;
+  letter-spacing: 3px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.remember-me{
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+.remember-me input[type='checkbox']{
+  accent-color: yellowgreen;
+}
+a{
+  text-decoration: none;
+  color: yellowgreen;
+  font-weight: 600;
+}
+.register-link{
+  margin-left: 5px;
 }
